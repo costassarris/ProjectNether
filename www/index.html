@@ -25,20 +25,24 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta content='user-scalable=no, initial-scale=1, width=device-width' id='viewport' name='viewport'/>
         <link rel="stylesheet" type="text/css" href="css/index.css" />
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Hello</p>
-                <p class="event received">Hola</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
+
+    <input id='pac-input' type='text' placeholder='Search Box'>
+    <div id='geolocation' style='width:640px; height:700px;'>
+        
+    </div>
+
+    
+
+        <script type='text/javascript' src='../platforms/ios/www/cordova.js'></script>
+<!--         // <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="js/index.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCZ3ZNAytcCIQaVvmEdvTBuWXu2ZMhnV8g&sensor=false"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
